@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+}
+
+/***** Smooth scrolling *****/
+html {
+  scroll-behavior: smooth;
+}
+
+/***** Parallax helpers *****/
+.will-change-transform {
+  will-change: transform;
+}
